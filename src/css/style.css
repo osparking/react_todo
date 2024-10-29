@@ -1,5 +1,11 @@
-.header {
-    color: deeppink;
-    font-size: 50px;
-    background-color: lightblue;
+.header-inline {
+  color: deeppink;
+  font-size: 50px;
+  background-color: lightblue;
+}
+
+.header-outline {
+  color: rgb(20, 255, 173);
+  font-size: 50px;
+  background-color: rgb(55, 18, 100);
 }
