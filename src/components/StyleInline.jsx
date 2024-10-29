@@ -1,8 +1,9 @@
-const hOneStyle = { color: "pink", fontSize: "100px" };
+import "../css/style.css";
+
 export default function StyleInline() {
   return (
     <div>
-      <h1 style={hOneStyle}>Style - Inline method</h1>
+      <h1 className="header">Style - Inline method</h1>
     </div>
   );
 }
