@@ -1,7 +1,8 @@
+const hOneStyle = { color: "pink", fontSize: "100px" };
 export default function StyleInline() {
   return (
     <div>
-      <h1 style={{ color: "blue" }}>Style - Inline method</h1>
+      <h1 style={hOneStyle}>Style - Inline method</h1>
     </div>
   );
 }
