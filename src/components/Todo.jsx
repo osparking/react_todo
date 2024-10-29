@@ -22,7 +22,7 @@ export default function Todo() {
         <button type="submit">등록</button>
       </form>
       {todoList.map((todo) => (
-        <TodoLine todo={todo}/>
+        <TodoLine todo={todo} key={todo} />
       ))}
     </div>
   );
