@@ -5,8 +5,8 @@ export default function Todo() {
 
   function handleTodo(e) {
     e.preventDefault();
-    setTodoList([todo]);
-    setTodo("");    
+    setTodoList([...todoList, todo]);
+    setTodo("");
   }
 
   return (
@@ -19,7 +19,9 @@ export default function Todo() {
         />
         <button type="submit">등록</button>
       </form>
-      {console.log(todoList)}
+      {todoList.map((todo) => (
+        <h4>{todo}</h4>
+      ))}
     </div>
   );
 }
