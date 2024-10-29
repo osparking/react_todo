@@ -1,3 +1,3 @@
-export default function TodoLine() {
+export default function TodoLine({todo}) {
   return <h4>{todo}</h4>;
 }
