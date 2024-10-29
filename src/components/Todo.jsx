@@ -1,4 +1,6 @@
 import { useState } from "react";
+import TodoLine from "./TodoLine";
+
 export default function Todo() {
   const [todo, setTodo] = useState("");
   const [todoList, setTodoList] = useState([]);
@@ -20,7 +22,7 @@ export default function Todo() {
         <button type="submit">등록</button>
       </form>
       {todoList.map((todo) => (
-        <h4>{todo}</h4>
+        <TodoLine />
       ))}
     </div>
   );
