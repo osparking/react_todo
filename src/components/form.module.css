@@ -23,12 +23,15 @@
 }
 
 .button_modern {
-    display: inline-block;
-    border: none;
-    border-radius: 4px;
-    background-color: #f7ca18;
-    padding: 12px 20px;
-    color: #fff;
-    cursor: pointer;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  background-color: #f7ca18;
+  padding: 12px 20px;
+  color: #fff;
+  cursor: pointer;
 }
 
+.container_input {
+  display: flex;
+}
