@@ -21,3 +21,14 @@
 .input_modern:focus {
   outline: none;
 }
+
+.button_modern {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    background-color: #f7ca18;
+    padding: 12px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
