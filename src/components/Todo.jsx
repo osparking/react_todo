@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Form from "./Form";
 import TodoLine from "./TodoLine";
 
 export default function Todo() {
@@ -13,14 +14,7 @@ export default function Todo() {
 
   return (
     <div>
-      <form onSubmit={handleTodo}>
-        <input
-          type="text"
-          onChange={(e) => setTodo(e.target.value)}
-          value={todo}
-        />
-        <button type="submit">등록</button>
-      </form>
+      <Form />
       {todoList.map((todo) => (
         <TodoLine todo={todo} key={todo} />
       ))}
