@@ -1,3 +1,5 @@
+import styles from "./header.module.css";
+
 export default function Header() {
-  return <div>내가 할일들</div>;
+  return <div className={styles.header}>내가 할일들</div>;
 }
