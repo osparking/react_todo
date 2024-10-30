@@ -1,4 +1,9 @@
 export default function Form() {
+  function handleTodo(e) {
+    e.preventDefault();
+    setTodoList([...todoList, todo]);
+    setTodo("");
+  }
   return (
     <form onSubmit={handleTodo}>
       <input
