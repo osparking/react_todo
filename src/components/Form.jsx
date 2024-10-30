@@ -1,5 +1,5 @@
 import { useState } from "react";
-export default function Form() {
+export default function Form({ todoList, setTodoList }) {
   const [todo, setTodo] = useState("");
   function handleTodo(e) {
     e.preventDefault();
