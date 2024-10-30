@@ -7,3 +7,17 @@
   margin-top: 50px;
   box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
 }
+
+.input_modern {
+  width: 100%;
+  display: block;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input_modern:focus {
+  outline: none;
+}
