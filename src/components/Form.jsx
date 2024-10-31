@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./form.module.css";
 export default function Form({ todoList, setTodoList }) {
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState({subject: "", done: false});
   function handleTodo(e) {
     e.preventDefault();
     setTodoList([...todoList, todo]);
