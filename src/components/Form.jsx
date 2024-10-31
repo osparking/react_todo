@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./form.module.css";
 export default function Form({ todoList, setTodoList }) {
-  const [todo, setTodo] = useState({subject: "", done: false});
+  const [todo, setTodo] = useState({ subject: "", done: false });
   function handleTodo(e) {
     e.preventDefault();
     setTodoList([...todoList, todo]);
@@ -14,7 +14,7 @@ export default function Form({ todoList, setTodoList }) {
           className={styles.input_modern}
           type="text"
           onChange={(e) => setTodo(e.target.value)}
-          value={todo}
+          value={todo.subject}
           placeholder="여기에 할 일을 입력..."
         />
         <button className={styles.button_modern} type="submit">
