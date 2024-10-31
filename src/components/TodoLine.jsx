@@ -3,14 +3,14 @@ export default function TodoLine({ todo, todoList, setTodoList }) {
   function deleteTodo(todo) {
     setTodoList(todoList.filter((item) => item !== todo));
   }
-  function subjectClicked() {
-    console.log("Subject clicked");
+  function subjectClicked(subject) {
+    console.log("Subject clicked", subject);
   }
 
   return (
     <div className={styles.todoLine}>
       <div className={styles.todoName}>
-        <span onClick={subjectClicked}>{todo.subject}</span>
+        <span onClick={() => subjectClicked(todo.subject)}>{todo.subject}</span>
         <span>
           <button
             onClick={() => deleteTodo(todo)}
