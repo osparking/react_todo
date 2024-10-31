@@ -5,7 +5,7 @@ export default function TodoLine({ todo }) {
       <div className={styles.todoName}>
         {todo}
         <span>
-          <button className={styles.buttonDelete}>X</button>
+          <button className={styles.buttonDelete}>x</button>
         </span>
       </div>
       <hr className={styles.hLine} />
