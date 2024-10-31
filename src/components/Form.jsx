@@ -13,7 +13,7 @@ export default function Form({ todoList, setTodoList }) {
         <input
           className={styles.input_modern}
           type="text"
-          onChange={(e) => setTodo(e.target.value)}
+          onChange={(e) => setTodo({ subject: e.target.value, done: false })}
           value={todo.subject}
           placeholder="여기에 할 일을 입력..."
         />
