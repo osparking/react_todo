@@ -1,7 +1,7 @@
 import styles from "./todoline.module.css";
-export default function TodoLine({ todo }) {
+export default function TodoLine({ todo, todoList, setTodoList }) {
   function deleteTodo(todo) {
-    console.log("삭제 시도된 할일 : " + todo);
+    setTodoList(todoList.filter((item) => item!== todo));
   }
   return (
     <div className={styles.todoLine}>
