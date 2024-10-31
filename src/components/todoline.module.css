@@ -6,6 +6,10 @@
 }
 
 .todoName {
-    font-weight: bold;
-    padding: 20px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.hLine {
+  border: 1px solid #f4f4f4;
 }
