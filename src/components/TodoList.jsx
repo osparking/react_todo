@@ -6,7 +6,7 @@ export default function TodoList({ todoList, setTodoList }) {
       {todoList.map((todo) => (
         <TodoLine
           todo={todo}
-          key={todo}
+          key={todo.subject}
           todoList={todoList}
           setTodoList={setTodoList}
         />

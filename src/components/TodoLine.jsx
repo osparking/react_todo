@@ -6,7 +6,7 @@ export default function TodoLine({ todo, todoList, setTodoList }) {
   return (
     <div className={styles.todoLine}>
       <div className={styles.todoName}>
-        {todo}
+        {todo.subject}
         <span>
           <button
             onClick={() => deleteTodo(todo)}

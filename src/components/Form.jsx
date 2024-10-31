@@ -5,7 +5,7 @@ export default function Form({ todoList, setTodoList }) {
   function handleTodo(e) {
     e.preventDefault();
     setTodoList([...todoList, todo]);
-    setTodo("");
+    setTodo({ subject: "", done: false });
   }
   return (
     <form className={styles.formtodo} onSubmit={handleTodo}>
