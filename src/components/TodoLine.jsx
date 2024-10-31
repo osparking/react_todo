@@ -1,14 +1,17 @@
 import styles from "./todoline.module.css";
 export default function TodoLine({ todo }) {
-  function deleteTodo() {
-    console.log("할일 삭제 시도됨");
+  function deleteTodo(todo) {
+    console.log("삭제 시도된 할일 : " + todo);
   }
   return (
     <div className={styles.todoLine}>
       <div className={styles.todoName}>
         {todo}
         <span>
-          <button onClick={deleteTodo} className={styles.buttonDelete}>
+          <button
+            onClick={() => deleteTodo(todo)}
+            className={styles.buttonDelete}
+          >
             x
           </button>
         </span>
