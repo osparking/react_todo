@@ -4,7 +4,12 @@ export default function TodoLine({ todo, todoList, setTodoList }) {
     setTodoList(todoList.filter((item) => item !== todo));
   }
   function subjectClicked(subject) {
-    console.log("Subject clicked", subject);
+    setTodoList(
+      todoList.map((item) =>
+        item.subject === subject ? { ...item, done: !item.done } : item
+      )
+    );
+    console.log(todoList);
   }
 
   return (
