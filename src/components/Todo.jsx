@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./Footer";
 import Form from "./Form";
 import TodoList from "./TodoList";
 
@@ -9,7 +10,7 @@ export default function Todo() {
     <div>
       <Form todoList={todoList} setTodoList={setTodoList} />
       <TodoList todoList={todoList} setTodoList={setTodoList} />
-      <h1>{completedCount}</h1>
+      <Footer completedCount={completedCount} />
     </div>
   );
 }
