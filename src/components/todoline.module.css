@@ -24,3 +24,7 @@
   margin-top: -10px;
   cursor: pointer;
 }
+
+.taskCompleted {
+  text-decoration: line-through;
+}
